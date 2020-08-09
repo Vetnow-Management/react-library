@@ -23,11 +23,6 @@
     "Components",
     "utilities"
   ],
-  "husky": {
-    "hooks": {
-      "post-commit": "yarn clean"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cade-tecnologia/react-library"

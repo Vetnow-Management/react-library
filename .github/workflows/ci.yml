@@ -17,11 +17,11 @@ jobs:
           yarn install
           yarn build-storybook
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist-storybook
-          publish_branch: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: ./dist-storybook
   publish-pkg:
     needs: deploy-storybook
     runs-on: ubuntu-latest

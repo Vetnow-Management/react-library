@@ -15,6 +15,11 @@
     "deploy-storybook": "storybook-to-ghpages",
     "prepare": "yarn run build"
   },
+  "storybook-deployer": {
+    "gitUsername": "UnDer-7",
+    "gitEmail": "mateus7532@gmail.com",
+    "commitMessage": "Deploy Storybook [skip ci]"
+  },
   "files": [
     "dist/**/*"
   ],

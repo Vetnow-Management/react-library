@@ -1,7 +1,7 @@
 {
   "homepage": "https://Vetnow-Management.github.io/react-library",
   "name": "@vetnow-management/react-library",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Components and utilities to use be used with React",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",

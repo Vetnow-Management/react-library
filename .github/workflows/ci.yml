@@ -15,7 +15,7 @@ jobs:
       - name: Build
         run: |
           yarn install
-          yarn deploy-storybook -- --ci --host-token-env-variable=${{ GITHUB_TOKEN }}
+          yarn deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
 #      - name: Deploy
 #        uses: JamesIves/github-pages-deploy-action@releases/v3
 #        with:

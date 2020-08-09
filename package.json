@@ -1,7 +1,7 @@
 {
   "homepage": "https://Vetnow-Management.github.io/react-library",
   "name": "@vetnow-management/react-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Components and utilities to use be used with React",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
@@ -83,12 +83,12 @@
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "react": "^16",
-    "react-dom": "^16",
     "@material-ui/icons": "^4",
     "@material-ui/lab": "^4",
     "@material-ui/pickers": "^3",
-    "@vetnow-management/essentials": "^1"
+    "@vetnow-management/essentials": "^1",
+    "react": "^16",
+    "react-dom": "^16"
   },
   "dependencies": {}
 }

@@ -15,13 +15,13 @@ jobs:
       - name: Build
         run: |
           yarn install
-          yarn build-storybook
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist-storybook
+          yarn deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
+#      - name: Deploy
+#        uses: JamesIves/github-pages-deploy-action@releases/v3
+#        with:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          BRANCH: gh-pages
+#          FOLDER: dist-storybook
   publish-pkg:
     needs: deploy-storybook
     runs-on: ubuntu-latest

@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['@cade-tecnologia/eslint-config/react-typescript'],
+  extends: ['@vetnow-management/eslint-config/react-typescript'],
   rules: {},
 };
